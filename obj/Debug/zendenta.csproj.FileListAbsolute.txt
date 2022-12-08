@@ -1,0 +1,15 @@
+D:\##LKS FILE\#LKS PROJECT\latihanUbig\zendenta\bin\Debug\zendenta.exe.config
+D:\##LKS FILE\#LKS PROJECT\latihanUbig\zendenta\bin\Debug\zendenta.exe
+D:\##LKS FILE\#LKS PROJECT\latihanUbig\zendenta\bin\Debug\zendenta.pdb
+D:\##LKS FILE\#LKS PROJECT\latihanUbig\zendenta\bin\Debug\Guna.Charts.WinForms.dll
+D:\##LKS FILE\#LKS PROJECT\latihanUbig\zendenta\bin\Debug\Guna.UI2.dll
+D:\##LKS FILE\#LKS PROJECT\latihanUbig\zendenta\bin\Debug\System.Data.SqlClient.dll
+D:\##LKS FILE\#LKS PROJECT\latihanUbig\zendenta\bin\Debug\System.Data.SqlClient.xml
+D:\##LKS FILE\#LKS PROJECT\latihanUbig\zendenta\obj\Debug\zendenta.csproj.AssemblyReference.cache
+D:\##LKS FILE\#LKS PROJECT\latihanUbig\zendenta\obj\Debug\zendenta.LoginForm.resources
+D:\##LKS FILE\#LKS PROJECT\latihanUbig\zendenta\obj\Debug\zendenta.Properties.Resources.resources
+D:\##LKS FILE\#LKS PROJECT\latihanUbig\zendenta\obj\Debug\zendenta.csproj.GenerateResource.cache
+D:\##LKS FILE\#LKS PROJECT\latihanUbig\zendenta\obj\Debug\zendenta.csproj.CoreCompileInputs.cache
+D:\##LKS FILE\#LKS PROJECT\latihanUbig\zendenta\obj\Debug\zendenta.csproj.CopyComplete
+D:\##LKS FILE\#LKS PROJECT\latihanUbig\zendenta\obj\Debug\zendenta.exe
+D:\##LKS FILE\#LKS PROJECT\latihanUbig\zendenta\obj\Debug\zendenta.pdb
