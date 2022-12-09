@@ -8,16 +8,17 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>zendenta</RootNamespace>
     <AssemblyName>zendenta</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
+    <Optimize>true</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
@@ -55,27 +56,83 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataMapper.cs" />
+    <Compile Include="FormDummy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDummy.Designer.cs">
+      <DependentUpon>FormDummy.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="model\Patient.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SubPages\DaftarPasien\ListPasienLayout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SubPages\DaftarPasien\ListPasienLayout.Designer.cs">
+      <DependentUpon>ListPasienLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubPages\Overview\OverviewChart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SubPages\Overview\OverviewChart.Designer.cs">
+      <DependentUpon>OverviewChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubPages\Overview\QuickInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SubPages\Overview\QuickInfo.Designer.cs">
+      <DependentUpon>QuickInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubPages\Pembayaran\TreatmentLayout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SubPages\Pembayaran\TreatmentLayout.Designer.cs">
+      <DependentUpon>TreatmentLayout.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormDummy.resx">
+      <DependentUpon>FormDummy.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SubPages\DaftarPasien\ListPasienLayout.resx">
+      <DependentUpon>ListPasienLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubPages\Overview\OverviewChart.resx">
+      <DependentUpon>OverviewChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubPages\Overview\QuickInfo.resx">
+      <DependentUpon>QuickInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubPages\Pembayaran\TreatmentLayout.resx">
+      <DependentUpon>TreatmentLayout.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -101,6 +158,19 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\dentist.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SubPages\Approval\" />
+    <Folder Include="SubPages\Calendar\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
